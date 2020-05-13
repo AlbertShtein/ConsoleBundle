@@ -1,6 +1,7 @@
 services:
     coresphere_console.controller:
         class: CoreSphere\ConsoleBundle\Controller\ConsoleController
+        tags: [controller.service_arguments]
         arguments:
             - "@templating"
             - "@coresphere_console.executer"
