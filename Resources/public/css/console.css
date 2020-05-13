@@ -7,6 +7,11 @@
 	font-size: 0.9em;
 	border: 5px solid rgba(210,210,210,1);
 	margin: 0 0 0 0;
+	resize: both;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	height: 90vh;
 }
 
 .console::after {
@@ -24,6 +29,7 @@
 	height: 25em;
 	overflow: auto;
 	overflow-y: scroll;
+	flex-grow: 1;
 }
 
 .console_log {
